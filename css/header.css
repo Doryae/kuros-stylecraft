@@ -1,0 +1,34 @@
+header {
+    width: 100%;
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    padding-top: 3rem;
+}
+
+header div span {
+    font-size: clamp(6rem, 20vw, 10rem);
+    font-weight: 700;
+    color: var(--accent);
+}
+
+header div {
+    display: flex;
+}
+
+header h1, header h1 span {
+    font-size: clamp(3rem, 10vw, 5rem);
+    line-height: clamp(25px, 9vw, 45px);
+    padding: clamp(10px, 5vw, 20px) 0;
+}
+
+header cite {
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    padding: 2rem 0;
+}
