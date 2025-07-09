@@ -1,8 +1,8 @@
-@import url(/css/fonts.css);
-@import url(/css/tokens.css);
-@import url(/css/header.css);
-@import url(/css/components/top-side-nav.css);
-@import url(/css/footer.css);
+@import url(./css/fonts.css);
+@import url(./css/tokens.css);
+@import url(./css/header.css);
+@import url(./css/components/top-side-nav.css);
+@import url(./css/footer.css);
 
 *, *::after, *::before {
     margin: 0;
