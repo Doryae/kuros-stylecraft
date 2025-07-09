@@ -1,6 +1,8 @@
 @import url(/css/fonts.css);
 @import url(/css/tokens.css);
 @import url(/css/header.css);
+@import url(/css/components/top-side-nav.css);
+@import url(/css/footer.css);
 
 *, *::after, *::before {
     margin: 0;
@@ -11,4 +13,9 @@
 html {
     font-size: 10px;
     font-family: "Inter";
+    color: var(--dark-primary);
+}
+
+p {
+    font-size: 1.8rem;
 }

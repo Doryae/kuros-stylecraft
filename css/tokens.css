@@ -1,5 +1,7 @@
 :root {
     --dark-primary: #1E2A33;
     --light-primary: #E6EEF3;
-    --accent: #F4A261; 
+    --accent: #F4A261;
+    --accent-50opacity: #F4A26188;
+    --light-accent: #AB520C;
 }
