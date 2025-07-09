@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/sans-serif/Inter-VariableFont_whgt.ttf);
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(./assets/fonts/sans-serif/Rubik-VariableFont_wght.ttf);
+}
+
+:root {
+    --dark-primary: #1E2A33;
+    --light-primary: #E6EEF3;
+    --accent: #F4A261;
+    --accent-50opacity: #F4A26188;
+    --light-accent: #AB520C;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Inter";
+    color: var(--dark-primary);
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+header {
+    width: 100%;
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.logo {
+    padding-top: 3rem;
+}
+
+header div span {
+    font-size: clamp(6rem, 20vw, 10rem);
+    font-weight: 700;
+    color: var(--accent);
+}
+
+header div {
+    display: flex;
+}
+
+header h1, header h1 span {
+    font-size: clamp(3rem, 10vw, 5rem);
+    line-height: clamp(25px, 9vw, 45px);
+    padding: clamp(10px, 5vw, 20px) 0;
+}
+
+header cite {
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    padding: 2rem 0;
+}
+
+nav {
+    background-color: var(--dark-primary);
+    padding: 20px 0;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 20px;
+    grid-template:  repeat(1, 50px) / repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 2rem auto;
+    min-width: 300px;
+    max-width: 80%;
+}
+
+nav a {
+    padding: 15px;
+    color: var(--accent);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border-color .5s;
+}
+
+nav a:hover {
+    border-color: var(--accent);
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 80px;
+}
+
+footer a {
+    color: var(--light-primary);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+footer span {
+    padding: 0 10px;
+}
+
+footer a:hover {
+    color: var(--accent)
+}
