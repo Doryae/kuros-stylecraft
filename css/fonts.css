@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Inter";
-    src: url(./assets/fonts/sans-serif/Inter-VariableFont_whgt.ttf);
+    src: url(../assets/fonts/sans-serif/Inter-VariableFont_whgt.ttf);
 }
 
 @font-face {
     font-family: "Rubik";
-    src: url(./assets/fonts/sans-serif/Rubik-VariableFont_wght.ttf);
+    src: url(../assets/fonts/sans-serif/Rubik-VariableFont_wght.ttf);
 }

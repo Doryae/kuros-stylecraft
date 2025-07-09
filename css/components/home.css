@@ -29,7 +29,7 @@ section h2 {
 
 main a {
     display: flex;
-    width: 80%;
+    width: 90%;
     text-decoration: none;
     border-radius: 6px;
     padding: 10px 15px;
@@ -92,5 +92,37 @@ main a.not-active:hover::after {
 
     100% {
         opacity: 1;
+    }
+}
+
+/* Responsive layout for homepage */
+
+@media (max-width: 880px) {
+    section {
+        grid-template: repeat(1, 50px) / repeat(1, 1fr);
+    }
+
+    section h2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        font-size: 1.4rem;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    main a {
+    min-width: 280px;
+    max-width: 80%;
+    }
+
+    main a svg {
+    width: 1.8rem;
+    height: 1.8rem;
     }
 }

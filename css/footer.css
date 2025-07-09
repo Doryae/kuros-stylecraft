@@ -22,3 +22,20 @@ footer span {
 footer a:hover {
     color: var(--accent)
 }
+
+/* responsive layout for footer on all pages */
+
+@media (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a {
+        padding: 15px 0;
+    }
+
+    footer span {
+        display: none;
+    }
+}
