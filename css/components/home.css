@@ -125,4 +125,8 @@ main a.not-active:hover::after {
     width: 1.8rem;
     height: 1.8rem;
     }
+
+    main a span {
+    padding: 0 10px;
+    }
 }
