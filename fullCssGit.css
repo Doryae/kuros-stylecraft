@@ -28,6 +28,18 @@ html {
     color: var(--dark-primary);
 }
 
+h2 {
+    font-size: clamp(3rem, 10vw, 3.8rem);
+}
+
+h3 {
+    font-size: clamp(2.4rem, 8vw, 3rem);
+}
+
+h4 {
+    font-size: clamp(2.1rem, 6vw, 2.5rem);
+}
+
 p {
     font-size: 1.8rem;
 }
@@ -149,5 +161,141 @@ footer a:hover {
 
     footer span {
         display: none;
+    }
+}
+
+/*---------------------------------------------------------------------*/
+/*-------------------------HOME PAGE---------------------------------- */
+/*---------------------------------------------------------------------*/
+
+main {
+    font-size: 2rem;
+}
+
+/* General Display of the page */
+
+.index section {
+    display: grid;
+    grid-template: repeat(1, 50px) / repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-auto-rows: 50px;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 90%;
+    margin: 7rem auto;
+    text-transform: uppercase;
+}
+
+.index section h2 {
+    font-family: "Rubik";
+    font-weight: 600;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+/* Links and their different states */
+
+.index a {
+    display: flex;
+    width: 90%;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: background-color .3s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out, color .3s ease-in-out;
+}
+
+.index a svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.index a.active {
+    color: var(--light-accent);
+    border: 2px solid var(--accent);
+}
+
+.index a.active:hover {
+    background-color: var(--dark-primary);
+    color: var(--accent);
+    border-color: var(--dark-primary);
+}
+
+.index a.active:active {
+    color: var(--light-primary);
+}
+
+.index a span {
+    padding: 0 15px;
+}
+
+.index a.not-active {
+    position: relative;
+    color: #A8B6C1;
+    border: 2px solid #A8B6C1;
+}
+
+/* Slight pop-up for inactive links */
+
+.index a.not-active::after {
+    content: "This link is not yet created !";
+    position: absolute;
+    top: 5px;
+    left: 25%;
+    width: 50%;
+    background-color: var(--accent-50opacity);
+    padding: 5px;
+    color: var(--dark-primary);
+    opacity: 0;
+    font-size: 1.5rem;
+}
+
+.index a.not-active:hover::after {
+    animation: pop-up-opacity .8s linear forwards;
+}
+
+@keyframes pop-up-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive layout for homepage */
+
+@media (max-width: 880px) {
+    .index section {
+        grid-template: repeat(1, 50px) / repeat(1, 1fr);
+    }
+
+    .index section h2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .index {
+        font-size: 1.4rem;
+    }
+
+    .index section h2 {
+        font-size: 3rem;
+    }
+
+    .index a {
+    min-width: 280px;
+    max-width: 80%;
+    }
+
+    .index a svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    }
+
+    .index a span {
+    padding: 0 10px;
     }
 }

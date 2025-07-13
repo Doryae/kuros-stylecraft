@@ -4,7 +4,7 @@ main {
 
 /* General Display of the page */
 
-section {
+.index section {
     display: grid;
     grid-template: repeat(1, 50px) / repeat(2, 1fr);
     grid-auto-flow: row;
@@ -18,16 +18,15 @@ section {
     text-transform: uppercase;
 }
 
-section h2 {
+.index section h2 {
     font-family: "Rubik";
     font-weight: 600;
-    font-size: 3.8rem;
     grid-area: 1 / 1 / 2 / 3;
 }
 
 /* Links and their different states */
 
-main a {
+.index a {
     display: flex;
     width: 90%;
     text-decoration: none;
@@ -36,31 +35,31 @@ main a {
     transition: background-color .3s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out, color .3s ease-in-out;
 }
 
-main a svg {
+.index a svg {
     width: 2.5rem;
     height: 2.5rem;
 }
 
-main a.active {
+.index a.active {
     color: var(--light-accent);
     border: 2px solid var(--accent);
 }
 
-main a.active:hover {
+.index a.active:hover {
     background-color: var(--dark-primary);
     color: var(--accent);
     border-color: var(--dark-primary);
 }
 
-main a.active:active {
+.index a.active:active {
     color: var(--light-primary);
 }
 
-main a span {
+.index a span {
     padding: 0 15px;
 }
 
-main a.not-active {
+.index a.not-active {
     position: relative;
     color: #A8B6C1;
     border: 2px solid #A8B6C1;
@@ -68,7 +67,7 @@ main a.not-active {
 
 /* Slight pop-up for inactive links */
 
-main a.not-active::after {
+.index a.not-active::after {
     content: "This link is not yet created !";
     position: absolute;
     top: 5px;
@@ -81,7 +80,7 @@ main a.not-active::after {
     font-size: 1.5rem;
 }
 
-main a.not-active:hover::after {
+.index a.not-active:hover::after {
     animation: pop-up-opacity .8s linear forwards;
 }
 
@@ -98,35 +97,35 @@ main a.not-active:hover::after {
 /* Responsive layout for homepage */
 
 @media (max-width: 880px) {
-    section {
+    .index section {
         grid-template: repeat(1, 50px) / repeat(1, 1fr);
     }
 
-    section h2 {
+    .index section h2 {
         grid-area: 1 / 1 / 2 / 2;
     }
 }
 
 @media (max-width: 500px) {
-    main {
+    .index {
         font-size: 1.4rem;
     }
 
-    section h2 {
+    .index section h2 {
         font-size: 3rem;
     }
 
-    main a {
+    .index a {
     min-width: 280px;
     max-width: 80%;
     }
 
-    main a svg {
+    .index a svg {
     width: 1.8rem;
     height: 1.8rem;
     }
 
-    main a span {
+    .index a span {
     padding: 0 10px;
     }
 }

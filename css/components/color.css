@@ -1,0 +1,58 @@
+.color {
+    display: flex;
+    justify-content: center;
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+h2 svg {
+    margin: 0 15px;
+}
+
+p {
+    padding: 15px;
+    max-width: 65ch;
+    text-align: justify;
+}
+
+.color ul {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: solid var(--accent) 4px;
+}
+
+.color ul li {
+    padding: 15px 25px;
+}
+
+p a {
+    color: var(--light-accent);
+}
+
+p span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+aside {
+    margin-bottom: 25px;
+}
+
+/*---------------------------------------*/
+
+.underwork {
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    margin: 10px auto;
+    color: var(--accent);
+    background-color: var(--dark-primary);
+}

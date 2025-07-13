@@ -16,6 +16,18 @@ html {
     color: var(--dark-primary);
 }
 
+h2 {
+    font-size: clamp(3rem, 10vw, 3.8rem);
+}
+
+h3 {
+    font-size: clamp(2.4rem, 8vw, 3rem);
+}
+
+h4 {
+    font-size: clamp(2.1rem, 6vw, 2.5rem);
+}
+
 p {
     font-size: 1.8rem;
 }
