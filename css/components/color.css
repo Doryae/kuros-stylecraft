@@ -16,12 +16,12 @@ h2 svg {
 
 p {
     padding: 15px;
-    max-width: 65ch;
+    max-width: 70ch;
     text-align: justify;
 }
 
 .color ul {
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
