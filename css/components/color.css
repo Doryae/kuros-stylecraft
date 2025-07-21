@@ -56,3 +56,127 @@ aside {
     color: var(--accent);
     background-color: var(--dark-primary);
 }
+
+/*-------------------------------------*/
+
+.color-palette {
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    border-top: #aaa solid 2px;
+}
+
+.color-palette h2 {
+    padding-top: 25px;
+}
+
+.palette {
+    display: flex;
+}
+
+.four-color {
+    width: 200px;
+    margin: 15px auto;
+    border: solid 2px #555;
+}
+
+.palette div {
+    width: 50px;
+    height: 50px;
+}
+
+.color-box {
+    width: 300px;
+    box-shadow: #AAA 0 0 3px 1px;
+}
+
+.color-duo {
+    display: flex;
+    width: 280px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: #AAA 0 0 3px 1px;
+}
+
+.score {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    padding-bottom: 0;
+}
+
+.color1, .color2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.score2a, .score3a, .score-null {
+    position: relative;
+    overflow: hidden;
+}
+
+.score-null::after {
+    content:"X";
+    color: var(--light-primary);
+    white-space: pre;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    align-content: center;
+    background-color: darkred;
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 260px;
+}
+
+.score2a::after {
+    content:"A\A A";
+    white-space: pre;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    align-content: center;
+    background-color: gold;
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 260px;
+}
+
+.score3a::after {
+    content:"A\A A\A A";
+    white-space: pre;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    align-content: center;
+    background-color: gold;
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 260px;
+}
+
+/*--------------------------------------*/
+/* Code Color Class - Code Color HEX */
+/*--------------------------------------*/
+
+.c-1E2A33 {
+    background-color: #1E2A33;
+    color: var(--light-primary);
+}
+
+.c-E6EEF3 {
+    background-color: #E6EEF3;
+}
+
+.c-F4A261 {
+    background-color: #F4A261;
+}
+
+.c-AB520C {
+    background-color: #AB520C;
+}

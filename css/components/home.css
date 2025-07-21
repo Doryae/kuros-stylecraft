@@ -42,7 +42,7 @@ main {
 
 .index a.active {
     color: var(--light-accent);
-    border: 2px solid var(--accent);
+    border: 2px solid var(--light-accent);
 }
 
 .index a.active:hover {

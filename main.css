@@ -14,6 +14,7 @@ html {
     font-size: 10px;
     font-family: "Inter";
     color: var(--dark-primary);
+    background-color: var(--background-light);
 }
 
 h2 {

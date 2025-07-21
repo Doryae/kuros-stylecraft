@@ -26,6 +26,7 @@ html {
     font-size: 10px;
     font-family: "Inter";
     color: var(--dark-primary);
+    background-color: var(--light-primary);
 }
 
 h2 {
@@ -212,7 +213,7 @@ main {
 
 .index a.active {
     color: var(--light-accent);
-    border: 2px solid var(--accent);
+    border: 2px solid var(--light-accent);
 }
 
 .index a.active:hover {
