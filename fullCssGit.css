@@ -85,7 +85,7 @@ header cite {
 
 /* NAVBAR HOME */
 
-nav {
+.navbar-home {
     background-color: var(--dark-primary);
     padding: 20px 0;
     display: grid;
@@ -99,7 +99,7 @@ nav {
     max-width: 80%;
 }
 
-nav a {
+.navbar-home a {
     padding: 15px;
     color: var(--accent);
     font-size: 2rem;
@@ -109,7 +109,7 @@ nav a {
     transition: border-color .5s;
 }
 
-nav a:hover {
+.navbar-home a:hover {
     border-color: var(--accent);
 }
 
