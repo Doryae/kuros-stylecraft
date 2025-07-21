@@ -1,0 +1,68 @@
+.preamble h2 {
+    margin-top: 35px;
+}
+
+#fonts article {
+    max-width: 80%;
+    min-width: 300px;
+    padding: 15px;
+    margin: 35px auto;
+    box-shadow: #777 0 0 3px 1px;
+}
+
+.multiple-fonts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Sans */
+
+.inter {
+    font-family: "Inter";
+}
+
+.rubik {
+    font-family: "Rubik";
+}
+
+.poppins, .sans {
+    font-family: "Poppins";
+}
+
+/* Serif */
+
+.lora, .serif {
+    font-family: "Lora";
+}
+
+.merriweather {
+    font-family: "Merriweather";
+}
+
+/* Monospace */
+
+.wenkaimono, .monospace {
+    font-family: "WenkaiMono";
+}
+
+/* Manuscript */
+
+.dancingscript, .manuscript {
+    font-family: "DancingScript";
+}
+
+.satisfy {
+    font-family: "Satisfy";
+}
+
+/* --- */
+
+.fonts p {
+    font-size: 2.15rem;
+    text-align: center;
+}
+
+.fonts cite {
+    font-size: 2.3rem;
+}

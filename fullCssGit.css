@@ -8,6 +8,26 @@
     src: url(./assets/fonts/sans-serif/Rubik-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/sans-serif/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url(./assets/fonts/serif/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url(./assets/fonts/manuscript/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "WenkaiMono";
+    src: url(./assets/fonts/monospace/LXGWWenKaiMonoTC-Regular.ttf);
+}
+
 :root {
     --dark-primary: #1E2A33;
     --light-primary: #E6EEF3;
@@ -43,6 +63,7 @@ h4 {
 
 p {
     font-size: 1.8rem;
+    line-height: calc(1.8rem + 5px);
 }
 
 /* HEADER */
@@ -83,23 +104,21 @@ header cite {
     padding: 2rem 0;
 }
 
-/* NAVBAR HOME */
+/* NAVBAR TOPSIDE */
 
-.navbar-home {
+.navbar {
     background-color: var(--dark-primary);
     padding: 20px 0;
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-rows: 55px;
-    grid-template:  repeat(1, 55px) / repeat(3, 1fr);
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin: 2rem auto;
     min-width: 300px;
     max-width: 80%;
 }
 
-.navbar-home a {
+.navbar a {
     padding: 15px;
     color: var(--accent);
     font-size: 2rem;
@@ -109,7 +128,7 @@ header cite {
     transition: border-color .5s;
 }
 
-.navbar-home a:hover {
+.navbar a:hover {
     border-color: var(--accent);
 }
 
@@ -138,6 +157,52 @@ footer span {
 
 footer a:hover {
     color: var(--accent)
+}
+
+/* Section for a majority of cases */
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+h2 svg {
+    margin: 0 15px;
+}
+
+p {
+    padding: 15px;
+    max-width: 70ch;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.color ul {
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: solid var(--accent) 4px;
+}
+
+.color ul li {
+    padding: 15px 25px;
+}
+
+p a {
+    color: var(--light-accent);
+}
+
+p span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+aside {
+    margin-bottom: 25px;
 }
 
 /*---------------------------------------------------------------------*/
@@ -300,3 +365,82 @@ main {
     padding: 0 10px;
     }
 }
+
+/*---------------------------------------------------------------------*/
+/*------------------------- SIDE NAV --------------------------------- */
+/*---------------------------------------------------------------------*/
+
+.underwork {
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    margin: 10px auto;
+    color: var(--accent);
+    background-color: var(--dark-primary);
+}
+
+.side-nav {
+    position: fixed;
+    top: calc(50% - 75px);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+    height: 150px;
+    background-color: var(--dark-primary);
+    border-radius: 8px;
+}
+
+.side-nav a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--accent);
+    height: 75px;
+    width: 100%;
+}
+
+.side-nav a:hover {
+    color: var(--light-primary);
+}
+
+.side-nav a:first-child {
+    transform: rotate(180deg);
+}
+
+.top-page:hover::after {
+    content: "UP PAGE";
+    font-size: 1.3rem;
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 65px;
+}
+
+.home-link:hover::after {
+    content: "HOME";
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 65px;
+}
+
+@media (max-width: 1149px) {
+    .side-nav {
+        position: relative;
+        flex-direction: row;
+        width: 150px;
+        height: 75px;
+        margin: 0 auto;
+    }
+
+    .side-nav a:first-of-type {
+        display: none;
+    }
+
+    .home-link:hover::after {
+        top: 55px;
+    }
+}
+
+/*---------------------------------------------------------------------*/
+/*-------------------------  Fonts  --------------------------------- */
+/*---------------------------------------------------------------------*/
